@@ -8,7 +8,7 @@
 <body>
   <main id="app">
     <h1 id="store">The Model Store</h1>
-    <esi:include src="http://localhost:8050/basket.html"></esi:include>
+    <div id="basket" class="empty">basket: 0 item(s)</div>
     <div id="image"><div><img src="./images/tractor-red.jpg" alt="Porsche-Diesel Master 419"></div></div>
     <h2 id="name">Tractor <small>Porsche-Diesel Master 419</small></h2>
     <div id="options">
@@ -25,7 +25,11 @@
       </button>
     </div>
     <button id="buy" type="button">buy for 66,00 €</button>
-    <esi:include src="http://localhost:8050/recommendations.html"></esi:include>
+    <div id="reco">
+      <h3>Related Products</h3>
+      <img src="./images/reco_3.jpg" alt="Reco 3">
+      <img src="./images/reco_5.jpg" alt="Reco 5">
+      <img src="./images/reco_6.jpg" alt="Reco 6">
+    </div>
   </main>
-  <script src="page.js"></script>
 </body></html>
