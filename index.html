@@ -1,0 +1,31 @@
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>0 Product Page - Plain JavaScript, One Team, Client Render</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="./page.css" rel="stylesheet">
+</head>
+<body>
+  <main id="app">
+    <h1 id="store">The Model Store</h1>
+    <esi:include src="http://localhost:8050/basket.html"></esi:include>
+    <div id="image"><div><img src="./images/tractor-red.jpg" alt="Porsche-Diesel Master 419"></div></div>
+    <h2 id="name">Tractor <small>Porsche-Diesel Master 419</small></h2>
+    <div id="options">
+      <button class="active" type="button" data-sku="t_porsche">
+        <img src="./images/tractor-red-thumb.jpg" alt="Porsche-Diesel Master 419">
+      </button>
+
+      <button class="" type="button" data-sku="t_fendt">
+        <img src="./images/tractor-green-thumb.jpg" alt="Fendt F20 Dieselroß">
+      </button>
+
+      <button class="" type="button" data-sku="t_eicher">
+        <img src="./images/tractor-blue-thumb.jpg" alt="Eicher Diesel 215/16">
+      </button>
+    </div>
+    <button id="buy" type="button">buy for 66,00 €</button>
+    <esi:include src="http://localhost:8050/recommendations.html"></esi:include>
+  </main>
+  <script src="page.js"></script>
+</body></html>
